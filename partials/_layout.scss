@@ -29,7 +29,7 @@
 
 // -------- Hero ----------//
 .hero {
-  color: $white-normal;
+  color: #ffffff;
   min-height: 80vh;
 
   display: flex;
@@ -52,8 +52,8 @@
 
   .button-contact {
     padding: 14px 28px;
-    color: $white-normal;
-    background-color: $red-normal;
+    color: #ffffff;
+    background-color: #e63946;
     border: 0;
     font-size: 18px;
     font-weight: 600;
@@ -92,32 +92,31 @@
 
 @media screen and (max-width: 480px) {
   .hero h1 {
-    font-size: 24p;
+    font-size: 24px;
   }
 }
 
-// -------- The End Hero ----------//
-
 // -------- About ----------//
 .about {
-  background-color: $primary-normal;
+  background-color: #06121e;
   overflow: hidden;
-  color: $white-normal;
+  color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 14px;
   padding: 34px 14px 64px 14px;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    max-width: 570px;
-  }
+.about-container img {
+  max-width: 570px;
+  width: 100%;
 }
 
-.about-content div {
+.about-container div {
   flex: 1;
 }
 
@@ -133,7 +132,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about-content {
+  .about-container {
     flex-direction: column;
   }
 }

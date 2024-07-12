@@ -104,7 +104,7 @@ i {
 }
 
 .hero {
-  color: #FFF;
+  color: #ffffff;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -124,8 +124,8 @@ i {
 }
 .hero .button-contact {
   padding: 14px 28px;
-  color: #FFF;
-  background-color: #d94140;
+  color: #ffffff;
+  background-color: #e63946;
   border: 0;
   font-size: 18px;
   font-weight: 600;
@@ -158,27 +158,29 @@ i {
 }
 @media screen and (max-width: 480px) {
   .hero h1 {
-    font-size: 24p;
+    font-size: 24px;
   }
 }
 .about {
   background-color: #06121e;
   overflow: hidden;
-  color: #FFF;
+  color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 14px;
   padding: 34px 14px 64px 14px;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-content img {
+.about-container img {
   max-width: 570px;
+  width: 100%;
 }
 
-.about-content div {
+.about-container div {
   flex: 1;
 }
 
@@ -192,7 +194,7 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  .about-content {
+  .about-container {
     flex-direction: column;
   }
 }
